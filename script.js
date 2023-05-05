@@ -259,6 +259,8 @@ function handleSort(event) {
   const sortOption = event.target.dataset.sortOption;
   let sortedData;
 
+
+  
   if (sortOption === 'gender') {
     const sortedTables = sortData(students, sortOption);
     const tableContainer = document.getElementById('table-container');
