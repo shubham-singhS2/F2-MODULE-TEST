@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Data</h1>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search" />
+        <button id="search-button">Search</button>
+      </div>
+
+      <div class="sort-container">
+        <button id="asc-name-button" data-sort-option="ascName">
+          Sort A-Z
+        </button>
+        <button id="desc-name-button" data-sort-option="descName">
+          Sort Z-A
+        </button>
+        <button id="asc-marks-button" data-sort-option="ascMarks">
+          Sort by Marks
+        </button>
+        <button id="passing-button" data-sort-option="passing">
+          Sort by Passing
+        </button>
+        <button id="asc-class-button" data-sort-option="ascClass">
+          Sort by Class
+        </button>
+        <button id="gender-button" data-sort-option="gender">
+          Sort by Gender
+        </button>
+      </div>
+
+      <div id="table-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
