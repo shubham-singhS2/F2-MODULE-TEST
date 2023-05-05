@@ -167,20 +167,21 @@ function generateTable(data) {
       const fullName = `${student.first_name} ${student.last_name}`;
       nameCell.innerHTML = `<img src="${student.img_src}" alt="${fullName}" width="50" height="50"/> ${fullName}`;
   
-      const emailCell = row.insertCell();
-      emailCell.innerHTML = student.email;
-
       const genderCell = row.insertCell();
       genderCell.innerHTML = student.gender;
+
+      const classCell = row.insertCell();
+      classCell.innerHTML = student.class;
   
       const marksCell = row.insertCell();
       marksCell.innerHTML = student.marks;
   
       const passingCell = row.insertCell();
       passingCell.innerHTML = student.passing ? 'Passing' : 'Failed';
-  
-      const classCell = row.insertCell();
-      classCell.innerHTML = student.class;
+      
+      const emailCell = row.insertCell();
+      emailCell.innerHTML = student.email;
+    
     });
   
     return table;
@@ -260,7 +261,7 @@ function handleSort(event) {
   let sortedData;
 
 
-  
+
   if (sortOption === 'gender') {
     const sortedTables = sortData(students, sortOption);
     const tableContainer = document.getElementById('table-container');
